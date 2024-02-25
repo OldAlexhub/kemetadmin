@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Logo from "../images/logo.png"; // Ensure path is correct
 import ReturnTrips from "../components/ReturnTrips";
+import SearchFlights from "../components/SearchFlights";
 
 const TripRequests = () => {
   const [trips, setTrips] = useState([]);
@@ -209,6 +210,7 @@ const TripRequests = () => {
         )}
       </div>
       <ReturnTrips />
+      <SearchFlights />
     </div>
   );
 };
